@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uso de tabela grande</title>
 </head>
+<Style>
+        table {
+            width: 500px;
+            border-collapse: collapse; /*remover o espaço entre bordas*/
+        }
+        th, td {
+            border: 1px solid black;
+            
+            
+            padding: 5px;
+        }    
+        thead, tfoot {
+            text-align: center;
+            background-color: rgb(66, 66, 66);
+            color: rgb(83, 229, 255);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        td.num {
+            text-align: right;
+        }
+</Style>
 <body>
     <h1>Uso de tabelas grandes</h1>
         <!--
@@ -18,6 +39,54 @@
             TFOOT
                 TR,TD. TH
         -->
-    
+    <table>
+        <thead>
+            <th>ESTADO</th>
+            <th>POPULAÇÂO</th>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.237.239</td>
+            </tr>
+
+            <tr>
+                <td>Ceara</td>
+                <td class="num">8.936.431</td>
+            </tr>
+
+            <tr>
+                <td>Pará</td>
+                <td class="num">7.581.051</td>
+            </tr>
+
+            <tr>
+                <td>Santa Catárina</td>
+                <td class="num">7.762.154</td>
+            </tr>
+
+                <tfoot>
+                    <td><strong>Total de Habitantes</strong></td>
+                    <td >210.147.125</td>
+                </tfoot>
+        </tbody>
+
+
+
+    </table>
+
+
+
 </body>
 </html>
